@@ -18,6 +18,10 @@ function responderSiNo(){
 
 }
 
+function diCualquierCosa(){
+	
+}
+
 
 
 
