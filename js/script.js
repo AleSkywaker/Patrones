@@ -1,5 +1,5 @@
-var leadself = 'Me: ',
-		leadcomputer = "PC: ",
+var leadself = 'Me: ';
+var	leadcomputer = "PC: ";
 		aSaid= ["This is a Cyber Chat"],
 		msgYes = "Yes, that's a great idea.",
 		msgNo = "No, that must be a mistake.",
