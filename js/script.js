@@ -10,6 +10,14 @@ var	frases = [	"Like mold on books, grow myths on history.",
 				"You’ve got about as much charm as a dead slug."];
 
 
+function hablar(){
+
+}
+
+function responderSiNo(){
+	
+}
+
 
 
 
