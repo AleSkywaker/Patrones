@@ -9,7 +9,7 @@ var	frases = [	"Like mold on books, grow myths on history.",
 				"She laughed, and the desert sang.",
 				"You’ve got about as much charm as a dead slug."];
 
-
+//metodos publicos
 function hablar(msg){
 
 }
@@ -19,9 +19,12 @@ function responderSiNo(){
 }
 
 function diCualquierCosa(){
-	
-}
 
+}
+//Este metodo debe ser privado
+function echo(msg){
+	loDicho.push('<div>' +msg+ '</div>')
+}
 
 
 
