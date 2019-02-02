@@ -20,15 +20,14 @@ var o = {
   diSiNo: function() {
     var msg = Math.random() > 0.5 ? msgSi : msgNo;
     _echo(computer + msg);
+  },
+  diCualquierCosa: function() {
+    var msg = frases[Math.floor(Math.random() * frases.length)];
+
+    _echo(computer + msg);
   }
 };
 
-function diCualquierCosa() {
-  var msg = frases[Math.floor(Math.random() * frases.length)];
-
-  _echo(computer + msg);
-}
-//Este metodo debe ser privado
 function _echo(msg) {
   loDicho.push("<div>" + msg + "</div>");
 
