@@ -1,5 +1,7 @@
 //Object literal pattern
 
+var o = {};
+
 var yo = "Me: ";
 var computer = "PC: ";
 var loDicho = ["This is a Cyber Chat"];
