@@ -12,18 +12,16 @@ var o = {
     "As long as we don’t die, this is gonna be one hell of a story.",
     "She laughed, and the desert sang.",
     "You’ve got about as much charm as a dead slug."
-  ]
+  ],
+  hablar: function(msg) {
+    _echo(yo + msg);
+  },
+
+  diSiNo: function() {
+    var msg = Math.random() > 0.5 ? msgSi : msgNo;
+    _echo(computer + msg);
+  }
 };
-
-//metodos publicos
-function hablar(msg) {
-  _echo(yo + msg);
-}
-
-function diSiNo() {
-  var msg = Math.random() > 0.5 ? msgSi : msgNo;
-  _echo(computer + msg);
-}
 
 function diCualquierCosa() {
   var msg = frases[Math.floor(Math.random() * frases.length)];
