@@ -1,5 +1,4 @@
 //Object literal pattern
-
 var o = {
   yo: "Me: ",
   computer: "PC: ",
@@ -14,32 +13,32 @@ var o = {
     "You’ve got about as much charm as a dead slug."
   ],
   hablar: function(msg) {
-    _echo(yo + msg);
+    this._echo(this.yo + msg);
   },
 
   diSiNo: function() {
-    var msg = Math.random() > 0.5 ? msgSi : msgNo;
-    _echo(computer + msg);
+    var msg = Math.random() > 0.5 ? this.msgSi : this.msgNo;
+    this._echo(this.computer + msg);
   },
   diCualquierCosa: function() {
-    var msg = frases[Math.floor(Math.random() * frases.length)];
-
-    _echo(computer + msg);
+    var msg = this.frases[Math.floor(Math.random() * this.frases.length)];
+    this._echo(this.computer + msg);
+  },
+  _echo:function (msg) {
+    this.loDicho.push("<div>" + msg + "</div>");
+  
+    var tamañoFrase = this.loDicho.length;
+    var comienzo = Math.max(tamañoFrase - 6, 0);
+    console.log("tamaño frase", tamañoFrase);
+    console.log("comienzo", comienzo);
+    var salida = "";
+  
+    for (var i = comienzo; i < tamañoFrase; i++) {
+      salida += this.loDicho[i];
+    }
+    $(".advert").html(salida);
+    $("#talk span").text(msg);
   }
 };
 
-function _echo(msg) {
-  loDicho.push("<div>" + msg + "</div>");
 
-  var tamañoFrase = loDicho.length;
-  var comienzo = Math.max(tamañoFrase - 6, 0);
-  console.log("tamaño frase", tamañoFrase);
-  console.log("comienzo", comienzo);
-  var salida = "";
-
-  for (var i = comienzo; i < tamañoFrase; i++) {
-    salida += loDicho[i];
-  }
-  $(".advert").html(salida);
-  $("#talk span").text(msg);
-}

@@ -23,9 +23,6 @@ function diSiNo() {
 
 function diCualquierCosa() {
 	var msg = frases[Math.floor(Math.random() * frases.length)];
-	
-
-
   _echo(computer + msg);
 }
 //Este metodo debe ser privado
