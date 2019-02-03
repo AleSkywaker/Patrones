@@ -1,5 +1,8 @@
 //Object literal pattern
-
+var com = com || {};
+com.alex = com.alex || {};
+com.alex.echo = com.alex.echo || {};
+com.alex.echo.tuto = com.alex.echo.tuto || {};
 
 com.alex.echo.tuto = {
   yo: "Me: ",
