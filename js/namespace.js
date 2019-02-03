@@ -1,7 +1,7 @@
 //Object literal pattern
 
 
-var o = {
+com.alex.echo.tuto = {
   yo: "Me: ",
   computer: "PC: ",
   loDicho: ["This is a Cyber Chat"],
