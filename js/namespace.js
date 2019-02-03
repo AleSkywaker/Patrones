@@ -1,4 +1,6 @@
 //Object literal pattern
+
+
 var o = {
   yo: "Me: ",
   computer: "PC: ",
