@@ -11,19 +11,34 @@ var chatModule = (function() {
     "She laughed, and the desert sang.",
     "You’ve got about as much charm as a dead slug."
   ];
+  function _echo(msg) {
+    loDicho.push("<div>" + msg + "</div>");
+
+    var tamañoFrase = loDicho.length;
+    var comienzo = Math.max(tamañoFrase - 6, 0);
+    console.log("tamaño frase", tamañoFrase);
+    console.log("comienzo", comienzo);
+    var salida = "";
+
+    for (var i = comienzo; i < tamañoFrase; i++) {
+      salida += loDicho[i];
+    }
+    $(".advert").html(salida);
+    $("#talk span").text(msg);
+  }
 
   return {
     hablar: function(msg) {
-      this._echo(this.yo + msg);
+      _echo(yo + msg);
     },
 
     diSiNo: function() {
-      var msg = Math.random() > 0.5 ? this.msgSi : this.msgNo;
-      this._echo(this.computer + msg);
+      var msg = Math.random() > 0.5 ? msgSi : msgNo;
+      _echo(computer + msg);
     },
     diCualquierCosa: function() {
-      var msg = this.frases[Math.floor(Math.random() * this.frases.length)];
-      this._echo(this.computer + msg);
+      var msg = frases[Math.floor(Math.random() * frases.length)];
+      _echo(computer + msg);
     }
   };
 })();
