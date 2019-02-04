@@ -41,4 +41,10 @@ var chatModule = (function() {
       _echo(computer + msg);
     }
   };
+
 })();
+$(document).ready(function(){
+    chatModule.hablar("Alex es guapo y rico");
+    chatModule.diSiNo();
+    chatModule.diCualquierCosa();
+})
