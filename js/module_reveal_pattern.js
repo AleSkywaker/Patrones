@@ -41,6 +41,7 @@ var chatModule = (function() {
   }
 
   return {
+    //puedo exponer solo las funciones que quiero y como quiero
     ha:hablar,
     diSiNo : diSiNo,
     diCualquierCosa : diCualquierCosa
