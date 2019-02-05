@@ -41,7 +41,7 @@ var chatModule = (function() {
   }
 
   return {
-    hablar,
+    ha:hablar,
     diSiNo : diSiNo,
     diCualquierCosa : diCualquierCosa
   };
