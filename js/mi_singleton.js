@@ -18,7 +18,7 @@ const ClaseSingleton = (() => {
   return {
     getInstance: () => {
       if (!instance) {
-        instence = new ClaseNueva();
+        instance = new ClaseNueva();
       }
       return instance;
     }
