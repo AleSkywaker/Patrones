@@ -1,9 +1,26 @@
-'use strict'
+"use strict";
 
-const ClaseSingleton = (()=>{
+const ClaseSingleton = (() => {
+  function ClaseNueva() {
+    var name;
 
-    return {
-        
+    this.getName = function() {
+      return name;
+    };
+
+    this.setName = function(n) {
+      name = n;
+    };
+  }
+
+  var instance;
+
+  return {
+    getInstance: () => {
+      if (!instance) {
+        instence = new ClaseNueva();
+      }
+      return instance;
     }
-
+  };
 })();
