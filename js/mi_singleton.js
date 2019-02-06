@@ -1,1 +1,5 @@
 'use strict'
+
+const ClaseSingleton = (()=>{
+
+})();
