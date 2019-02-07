@@ -13,6 +13,7 @@ const alumnos = {
 
     crear: function(datos){
         console.log(datos)
+        this.listaAlumnos.push(datos)
 
     },
 
@@ -35,3 +36,4 @@ const alumno2 = {
 
 alumnos.crear(alumno)
 alumnos.crear(alumno2)
+alumnos.listaAlumnos()
