@@ -8,8 +8,8 @@ function ConstructorSitios(){
             html = new ImageHTML(texto)
         }else if(tipo === 'h1'){
             html = new HeadingHTML(texo)
-        }else{
-            
+        }else if(tipo === 'p'){ 
+            html = new ParrafoHTML(texto)
         }
     }
 }
