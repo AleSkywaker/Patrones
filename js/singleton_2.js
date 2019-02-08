@@ -5,14 +5,14 @@ const alumnos = {
 
 
     //obtener alumnos
-    get: function(alumno){
-        alumno
+    get: function(id){
+        return this.listaAlumnos[id]
     },
 
     //Crear alumno
 
     crear: function(datos){
-        console.log(datos)
+        // console.log(datos)
         this.listaAlumnos.push(datos)
 
     },
@@ -33,7 +33,13 @@ const alumno2 = {
     nombre:"Juan",
     edad: 28
 }
+const alumno3 = {
+    nombre:"Maria",
+    edad: 18
+}
 
 alumnos.crear(alumno)
 alumnos.crear(alumno2)
-alumnos.listaAlumnos()
+alumnos.crear(alumno3)
+console.log(alumnos.listado())
+console.log("posicion 1",alumnos.get(0))
