@@ -18,11 +18,11 @@ function ConstructorSitios() {
       const elemento = documento.crearElemento(this.tipo);
 
       if (this.tipo === "input") {
-        elemento.setAttribute("placeholder", this.tipo);
+        elemento.setAttribute("placeholder", this.texto);
       } else if (this.tipo === "img") {
-        elemento.setAttribute("src", this.tipo);
+        elemento.setAttribute("src", this.texto);
       } else {
-          elemento.setAttribute('text', this.tipo)
+          elemento.appendChild(docuemt.createTexNode(this.texto))
       }
     };
 
