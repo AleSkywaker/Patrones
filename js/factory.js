@@ -33,7 +33,9 @@ const sitioWeb = new ConstructorSitios();
 //Almacenar elementos
 const elementosWeb = [];
 elementosWeb.push(sitioWeb.crearElemento('Bienvenidos', 'h1'))
-elementosWeb.push(sitioWeb.crearElemento('Alex', 'input'))
+elementosWeb.push(sitioWeb.crearElemento('Contacto', 'input'))
+elementosWeb.push(sitioWeb.crearElemento('Conoce mas sobre nosotros', 'p'))
+elementosWeb.push(sitioWeb.crearElemento('logo.svg', 'img'))
 
 
 console.log(elementosWeb)
