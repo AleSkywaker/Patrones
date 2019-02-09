@@ -11,6 +11,8 @@ function ConstructorSitios(){
         }else if(tipo === 'p'){ 
             html = new ParrafoHTML(texto)
         }
+
+        html.tipo = tipo;
         return html
     }
 }
