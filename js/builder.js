@@ -3,3 +3,10 @@ class Formulario {
         this.campos = []
     }
 }
+
+
+class Inputs{
+    constructor(texto){
+        this.texto = texto;
+    }
+}
