@@ -15,16 +15,18 @@ function ConstructorSitios() {
     html.tipo = tipo;
 
     html.mostrar = function() {
-      const elemento = documento.crearElemento(this.tipo);
+      const elemento = document.createElement(this.tipo);
 
       if (this.tipo === "input") {
         elemento.setAttribute("placeholder", this.texto);
       } else if (this.tipo === "img") {
         elemento.setAttribute("src", this.texto);
       } else {
-          elemento.appendChild(docuemt.createTexNode(this.texto))
+          elemento.appendChild(document.createTextNode(this.texto))
       }
-    };
+
+      document.querySelector("#app").appendChild(elemento)
+    }
 
     return html;
   };
@@ -52,4 +54,9 @@ elementosWeb.push(sitioWeb.crearElemento("Contacto", "input"));
 elementosWeb.push(sitioWeb.crearElemento("Conoce mas sobre nosotros", "p"));
 elementosWeb.push(sitioWeb.crearElemento("logo.svg", "img"));
 
-console.log(elementosWeb);
+// console.log(elementosWeb);
+
+elementosWeb.forEach(el=>{
+    console.log(el)
+     el.mostrar();
+})
