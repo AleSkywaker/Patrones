@@ -10,3 +10,6 @@ class Inputs{
         this.texto = texto;
     }
 }
+
+//intanciar Formulario
+
