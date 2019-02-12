@@ -31,7 +31,11 @@ class Formulario {
 
 		for (let i = 0; i < campos; i++) {
 			campo = this.campos[i];
+			form.appendChild(campo.crearElemento());
+			let br = createElement('br');
+			form.appendChild('br');
 		}
+		return form;
 	}
 }
 
