@@ -32,8 +32,8 @@ class Formulario {
 		for (let i = 0; i < campos; i++) {
 			campo = this.campos[i];
 			form.appendChild(campo.crearElemento());
-			let br = createElement('br');
-			form.appendChild('br');
+			let br = document.createElement('br');
+			form.appendChild(br);
 		}
 		return form;
 	}
@@ -73,7 +73,7 @@ class Boton extends Inputs {
 	crearElemento() {
 		const boton = document.createElement('button');
 		boton.setAttribute('type', 'submit');
-		boton.textContent = this.text;
+		boton.textContent = this.texto;
 		return boton;
 	}
 }
