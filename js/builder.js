@@ -78,7 +78,7 @@ class Boton extends Inputs {
 	}
 }
 
-//intanciar Formulario
+//Intanciar Formulario
 const formulario = new Formulario();
 formulario.agregarCampo('text', 'Añade tu nombre');
 formulario.agregarCampo('email', 'Añade tu email');
