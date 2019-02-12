@@ -29,7 +29,9 @@ class Formulario {
 		let campos = this.campos.length;
 		let campo;
 
-		for (let i = 0; i < campos; i++) {}
+		for (let i = 0; i < campos; i++) {
+			campo = this.campos[i];
+		}
 	}
 }
 
