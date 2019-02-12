@@ -28,8 +28,6 @@ class Formulario {
 		let form = document.createElement('form');
 		let campos = this.campos.length;
 		let campo;
-
-		return form;
 	}
 }
 
