@@ -83,4 +83,11 @@ const formulario = new Formulario();
 formulario.agregarCampo('text', 'Añade tu nombre');
 formulario.agregarCampo('email', 'Añade tu email');
 formulario.agregarCampo('button', 'Enviar formulario');
+
+//Renderizar en el HTML
+
+document.addEventListener('DOMContentLoaded', () => {
+	document.querySelector('#app').appendChild(formulario.obtenerFormulario());
+});
+
 console.log(formulario);
