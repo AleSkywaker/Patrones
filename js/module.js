@@ -1,7 +1,9 @@
-const comprarEntraa = (function() {
+const comprarEntrada = (function() {
 	let evento = 'Conferencia JS 2019';
 
-	return {};
+	return {
+		evento
+	};
 })();
 
-console.log(evento);
+console.log(comprarEntrada.evento);
